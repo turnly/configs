@@ -1,0 +1,29 @@
+**/node_modules
+/.cache
+.DS_Store
+
+# Logs
+logs/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Builds
+**/tsconfig.tsbuildinfo
+
+# Husky
+.husky/_
+.husky/.gitignore
+
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

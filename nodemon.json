@@ -1,0 +1,17 @@
+{
+  "execMap": {
+    "ts": "ROOT_DIR=$(pwd) NODE_PATH=./src ts-node -r dotenv/config"
+  },
+  "ext": "ts",
+  "ignore": [
+    ".git",
+    "node_modules",
+    "dist",
+    "tests",
+    "tsconfig.tsbuildinfo"
+  ],
+  "watch": [
+    "src",
+    ".env"
+  ]
+}
