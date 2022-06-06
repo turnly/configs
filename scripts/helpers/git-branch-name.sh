@@ -81,6 +81,4 @@ check_git_branch_name() {
   info "$branch - LGTM! ✅ "
 
   IFS=$DEFAULT_IFS
-
-  exit 0
 }
