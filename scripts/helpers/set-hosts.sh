@@ -1,9 +1,9 @@
 #!/bin/bash
 
 function set_hosts() {
-  HOSTS="$1"
+  HOSTS=("$@")
 
-  [[ -z "$HOSTS" ]] && error "Oops! No hosts provided"
+  [[ -z "$*" ]] && error "Oops! No hosts provided"
 
   HOSTS_FILE="/etc/hosts"
 
@@ -36,7 +36,12 @@ function set_hosts() {
 
   for host in "${HOSTS[@]}"; do
     if [[ $CURRENT_HOSTS != *"$host"* ]] &>/dev/null; then
-      echo "127.0.0.1 $host" >>$HOSTS_FILE
+      info "Adding the host $host to the hosts file... 📡 "
+
+      {
+        echo "# ci(devO): added by Turnly Athena, do not edit here."
+        echo "127.0.0.1 $host"
+      } >>$HOSTS_FILE
     fi
   done
 }
