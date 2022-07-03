@@ -39,7 +39,7 @@ function set_hosts() {
       info "Adding the host $host to the hosts file... 📡 "
 
       {
-        echo "# ci(devO): added by Turnly Athena, do not edit here."
+        echo "# ci(devO): Added by Turnly, do not edit here."
         echo "127.0.0.1 $host"
       } >>$HOSTS_FILE
     fi
