@@ -1,6 +1,6 @@
 {
   "execMap": {
-    "ts": "ROOT_DIR=$(pwd) NODE_PATH=./src ts-node -r dotenv/config"
+    "ts": "ROOT_DIR=$(pwd) NODE_PATH=./src ts-node -r dotenv/config dotenv_config_path=../../.env"
   },
   "ext": "ts",
   "ignore": [
