@@ -10,6 +10,6 @@ module.exports = {
   ],
   moduleDirectories: ['node_modules', 'src'],
   setupFiles: [
-    '<rootDir>/jest.setup.js'
+    '<rootDir>/node_modules/@turnly/eslint-config/tests/jest.setup.js'
   ],
 }

@@ -13,7 +13,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
-    project: ['./tsconfig.json'],
+    project: ['./tsconfig.json', './tsconfig.test.json'],
     sourceType: 'module',
   },
   plugins: [
@@ -39,12 +39,6 @@ module.exports = {
         format: ['camelCase'],
         leadingUnderscore: 'allow',
         selector: 'parameter',
-      },
-      {
-        format: ['camelCase'],
-        leadingUnderscore: 'forbid',
-        modifiers: ['private'],
-        selector: 'memberLike',
       },
       {
         format: ['PascalCase'],
@@ -81,6 +75,7 @@ module.exports = {
     semi: ['error', 'never'],
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
+    'no-console': ['error'],
     'notice/notice': [
       'error',
       {
