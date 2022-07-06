@@ -1,14 +1,10 @@
 {
   "name": "@turnly/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "description": "Shared configs",
-  "license": "UNLICENSED",
-  "author": {
-    "name": "Efra",
-    "email": "efra23peralta@gmail.com",
-    "url": "https://github.com/efraa"
-  },
+  "license": "MIT",
+  "author": "Turnly Team <team@turnly.app> (https://turnly.app)",
   "main": "./eslint/eslint.node.js",
   "files": [
     "eslint",
@@ -30,13 +26,16 @@
     "scripts"
   ],
   "dependencies": {
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
-    "dotenv": "^16.0.1",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-notice": "^0.9.10",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-security-node": "^1.0.14",
     "eslint-plugin-simple-import-sort": "^7.0.0",

@@ -22,6 +22,7 @@ module.exports = {
     'simple-import-sort',
     'security-node',
     'sonarjs',
+    'notice'
   ],
   rules: {
     '@typescript-eslint/ban-types': ['off'],
@@ -29,23 +30,10 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'error',
       {
-        format: ['camelCase', 'UPPER_CASE'],
-        selector: 'default',
-      },
-      {
         format: ['PascalCase', 'UPPER_CASE'],
         prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
         selector: 'variable',
         types: ['boolean'],
-      },
-      {
-        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
-        selector: 'variableLike',
-      },
-      {
-        format: ['camelCase'],
-        leadingUnderscore: 'allow',
-        selector: ['classProperty', 'parameterProperty'],
       },
       {
         format: ['camelCase'],
@@ -61,12 +49,6 @@ module.exports = {
       {
         format: ['PascalCase'],
         selector: 'typeLike',
-      },
-      {
-        format: ['camelCase', 'UPPER_CASE'],
-        leadingUnderscore: 'allow',
-        modifiers: ['readonly'],
-        selector: 'property',
       },
       {
         format: ['UPPER_CASE'],
@@ -99,5 +81,12 @@ module.exports = {
     semi: ['error', 'never'],
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
+    'notice/notice': [
+      'error',
+      {
+        'mustMatch': 'Licensed under MIT License',
+        'templateFile': 'COPYRIGHT'
+      }
+    ],
   },
 }
