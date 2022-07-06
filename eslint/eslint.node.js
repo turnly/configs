@@ -85,7 +85,10 @@ module.exports = {
       'error',
       {
         'mustMatch': 'Licensed under MIT License',
-        'templateFile': 'node_modules/@turnly/eslint-config/COPYRIGHT'
+        'templateFile': 'node_modules/@turnly/eslint-config/COPYRIGHT',
+        'messages': {
+           'whenFailedToMatch': "The copyright disclaimer (MIT License) couldn’t find, are you sure you added it?"
+        }
       }
     ],
   },
