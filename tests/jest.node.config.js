@@ -18,4 +18,7 @@ module.exports = {
   setupFiles: [
     '<rootDir>/node_modules/@turnly/eslint-config/tests/jest.setup.js',
   ],
+  detectOpenHandles: true,
+  passWithNoTests: true,
+  forceExit: true,
 }
