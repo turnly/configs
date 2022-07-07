@@ -1,7 +1,6 @@
 module.exports = {
   preset: 'ts-jest',
   roots: ['<rootDir>'],
-  collectCoverage: true,
   coverageDirectory: 'coverage',
   collectCoverageFrom: ['<rootDir>/src/**/*.{js,ts}', '!**/node_modules/**'],
   /**
