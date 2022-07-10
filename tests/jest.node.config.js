@@ -3,6 +3,7 @@ module.exports = {
   roots: ['<rootDir>'],
   coverageDirectory: 'coverage',
   collectCoverageFrom: ['<rootDir>/src/**/*.{js,ts}', '!**/node_modules/**'],
+  moduleDirectories: ['node_modules', '<rootDir>/src'],
   /**
    * @todo add coverage threshold
    *
