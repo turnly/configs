@@ -4,6 +4,7 @@ module.exports = {
   coverageDirectory: 'coverage',
   collectCoverageFrom: ['<rootDir>/src/**/*.{js,ts}', '!**/node_modules/**'],
   moduleDirectories: ['node_modules', '<rootDir>/src'],
+  clearMocks: true,
   /**
    * @todo add coverage threshold
    *
