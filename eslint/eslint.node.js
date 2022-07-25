@@ -79,10 +79,10 @@ module.exports = {
     'notice/notice': [
       'error',
       {
-        'mustMatch': 'Licensed under MIT License',
+        'mustMatch': 'Licensed under BSD 3-Clause License',
         'templateFile': 'node_modules/@turnly/eslint-config/COPYRIGHT',
         'messages': {
-           'whenFailedToMatch': "The copyright disclaimer (MIT License) couldn’t find, are you sure you added it?"
+           'whenFailedToMatch': "The copyright disclaimer (BSD 3-Clause License) couldn’t find, are you sure you added it?"
         }
       }
     ],
