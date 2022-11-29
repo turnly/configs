@@ -5,7 +5,7 @@ LC_ALL=C
 check_git_branch_name() {
   local DEFAULT_IFS IGNORE_BRANCHES branch names regex
 
-  branch=$(git branch --show-current | awk '{print tolower($0)}')
+  branch=$(git rev-parse --abbrev-ref HEAD | awk '{print tolower($0)}')
   names=(
     "develop"
     "main"
