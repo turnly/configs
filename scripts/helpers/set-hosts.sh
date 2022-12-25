@@ -41,6 +41,7 @@ function set_hosts() {
       {
         echo "# ci(devO): Added by Turnly, do not edit here."
         echo "127.0.0.1 $host"
+        echo "::1 $host"
       } >>$HOSTS_FILE
     fi
   done
