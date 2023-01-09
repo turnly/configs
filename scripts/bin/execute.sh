@@ -24,10 +24,19 @@ function execute() {
       if [ -f $COMMAND_LOGS ]; then
         line
 
-        warning "Command output: 👀 "
-        warning " -------------------------------------------------- "
-        warning "$(tail -10 $COMMAND_LOGS)"
-        warning " -------------------------------------------------- "
+        if [ -z "$VERBOSE" ]; then
+          warning "Last 10 lines of execution logs: 👀 "
+
+          line
+
+          echo " -------------------------------------------------- "
+          echo -e "\n $(tail -10 $COMMAND_LOGS) \n"
+          echo " -------------------------------------------------- "
+
+          line
+
+          info "To see the full logs, open the file: $COMMAND_LOGS"
+        fi
 
         line
       fi
