@@ -26,7 +26,7 @@ function execute() {
 
         warning "Command output: 👀 "
         warning " -------------------------------------------------- "
-        warning "$(cat $COMMAND_LOGS)"
+        warning "$(tail -10 $COMMAND_LOGS)"
         warning " -------------------------------------------------- "
 
         line
