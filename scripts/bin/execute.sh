@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMMAND_LOGS="devo.log"
+COMMAND_LOGS="/var/log/turnly.log"
 
 function exec_command() {
   local COMMAND="$1"
@@ -14,8 +14,6 @@ function exec_command() {
 
 function execute() {
   [[ -z "$*" ]] && error "No commands provided"
-
-  [[ -f $COMMAND_LOGS ]] && rm -rf $COMMAND_LOGS
 
   for command in "$@"; do
     info "Executing command: $command... 🏁 "
