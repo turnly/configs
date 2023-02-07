@@ -22,7 +22,7 @@ module.exports = {
     'simple-import-sort',
     'security-node',
     'sonarjs',
-    'notice'
+    'notice',
   ],
   rules: {
     '@typescript-eslint/ban-types': ['off'],
@@ -79,12 +79,14 @@ module.exports = {
     'notice/notice': [
       'error',
       {
-        'mustMatch': 'Licensed under BSD 3-Clause License',
-        'templateFile': 'node_modules/@turnly/eslint-config/COPYRIGHT',
-        'messages': {
-           'whenFailedToMatch': "The copyright disclaimer (BSD 3-Clause License) couldn’t find, are you sure you added it?"
-        }
-      }
+        mustMatch: 'Licensed under BSD 3-Clause License',
+        templateFile: 'node_modules/@turnly/eslint-config/COPYRIGHT',
+        template: '/**\n * Copyright (c) 2022, Turnly (https://turnly.app)\n * All rights reserved. \n * \n * Licensed under BSD 3-Clause License. See LICENSE for terms. \n */\n',
+        messages: {
+          whenFailedToMatch:
+            'The copyright disclaimer (BSD 3-Clause License) couldn’t find, are you sure you added it?',
+        },
+      },
     ],
   },
 }

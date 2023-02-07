@@ -17,7 +17,7 @@ module.exports = {
     '**/?(*.)+(spec|test).[tj]s?(x)',
   ],
   setupFiles: [
-    '<rootDir>/node_modules/@turnly/eslint-config/tests/jest.setup.js',
+    '<rootDir>/tests/setup/jest.setup.js',
   ],
   passWithNoTests: true,
 }
