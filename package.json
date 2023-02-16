@@ -33,7 +33,6 @@
     "@typescript-eslint/parser": "^5.52.0",
     "dotenv": "^16.0.3",
     "eslint": "^8.34.0",
-    "esquery": "1.4.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-notice": "^0.9.10",
     "eslint-plugin-prettier": "^4.0.0",
@@ -46,6 +45,6 @@
     "typescript": "^4.9.5"
   },
   "resolutions": {
-    "eslint/esquery": "1.4.0"
+    "**/esquery": "1.4.0"
   }
 }
