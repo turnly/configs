@@ -79,9 +79,9 @@ module.exports = {
     'notice/notice': [
       'error',
       {
-        mustMatch: 'Licensed under BSD 3-Clause License',
+        mustMatch: 'Copyright (c)',
         templateFile: 'node_modules/@turnly/eslint-config/COPYRIGHT',
-        template: '/**\n * Copyright (c) 2022, Turnly (https://turnly.app)\n * All rights reserved. \n * \n * Licensed under BSD 3-Clause License. See LICENSE for terms. \n */\n',
+        template: '/**\n * Copyright (c) 2022-2023, Turnly Inc (https://turnly.app)\n * All rights reserved. \n * \n * A fair-code sotfware, licensed under the "/LICENSE". \n */\n',
         messages: {
           whenFailedToMatch:
             'The copyright disclaimer (BSD 3-Clause License) couldn’t find, are you sure you added it?',
