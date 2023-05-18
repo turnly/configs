@@ -79,7 +79,7 @@ module.exports = {
     'notice/notice': [
       'error',
       {
-        mustMatch: 'Copyright (c)',
+        mustMatch: 'A fair-code sotfware, licensed under the "/LICENSE".',
         templateFile: 'node_modules/@turnly/eslint-config/COPYRIGHT',
         template: '/**\n * Copyright (c) 2022-2023, Turnly Inc (https://turnly.app)\n * All rights reserved. \n * \n * A fair-code sotfware, licensed under the "/LICENSE". \n */\n',
         messages: {
