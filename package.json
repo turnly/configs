@@ -34,7 +34,6 @@
     "dotenv": "^16.0.3",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-notice": "^0.9.10",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-security-node": "^1.0.14",
     "eslint-plugin-simple-import-sort": "^10.0.0",
