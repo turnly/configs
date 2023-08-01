@@ -10,7 +10,7 @@
     "lib": [
       "ESNext"
     ],
-    "module": "es2020",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "noImplicitOverride": true,
